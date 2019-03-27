@@ -1,0 +1,309 @@
+html {box-sizing:border-box;}
+*,* :after, *:before {box-sizing:inherit;}
+
+body {
+	background-color: white;
+	font-family: Helvetica, san-serif;
+	font-weight: lighter;
+	font-size: 12px;
+	color: rgb(31,31,31);
+	/* margin-left: 40px; */
+}
+
+a {
+	text-decoration: none;
+}
+
+a:visited {
+	font-family: Helvetica, san-serif;
+	font-weight: thin;
+	font-size: 15px;
+	color: rgb(31,31,31);
+}
+
+ul {
+	list-style-type: none;
+	padding: 0px;
+}
+
+li {
+	list-style: none;
+	padding: 1px;
+}
+
+h5 {
+	font-style: bold;
+	font-size: 12px;
+}
+
+
+/* Top bar */
+
+#section1 {
+	border-bottom: 2px solid rgb(243,243,242);
+}
+
+#topList {
+	display: flex;
+	justify-content: space-between;
+	margin: 15px 0px;
+}
+
+#etsyLogo {
+	width: 75px;
+}
+
+#searchInput {
+	height: 34px;
+	width: 315px;
+	border-radius: 3px 0px 0px 3px;
+	font-size: 15px;
+	border-color: rgb(206,203,200);
+	border-style: solid;
+	border-width: 1px;
+	padding: 5px;
+}
+
+#searchInput:focus {
+	border-color: black;
+	outline: none;
+}
+
+
+#searchButton {
+	background-color: black;
+	border-style: none;
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+	height: 34px;
+	width: 80px;
+	border-radius: 0px 3px 3px 0px;
+	position: relative;
+	top: -1px;
+	right: 5px;
+}
+
+
+#signInButton {
+	width: 65px;
+	height: 34px;
+	background-color: white;
+	font-size: 15px;
+	border-radius: 2px;
+	overflow: hidden;
+	border-color: black;
+}
+
+#topRight {
+	margin-right: 20px;
+	line-height: 34px;
+	font-size: 15px;
+}
+
+
+#discover, #cart {
+	border-left-style: solid;
+	border-left-width: 3px;
+	border-left-color: rgb(243,243,242);
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: rgb(102,102,102);
+}
+
+.responsive, #sectionList, #section3List {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.responsive {
+	margin-top: 5px;
+}
+
+/* Nav Bar */
+
+#sectionList {
+	justify-content: space-between;
+	border-bottom: 2px solid rgb(243,243,242);
+	font-size: 15px;
+}
+
+#sectionList li {
+	max-width: 160px;
+	margin: 0px 5px 10px 5px;
+	text-align: center;
+}
+
+/* Related Items Bar */
+
+.related, .lessRelated {
+	overflow: hidden;
+	border-radius: 5px;
+	border-style: solid;
+	border-color: rgb(217,138,75);
+	border-width: 1px;
+	font-size: 15px;
+	margin: 5px;
+	text-align: center;
+	padding: 0px 10px 0px 10px;
+	line-height: 34px;
+	height: 34px;
+}
+
+.related {
+	background-color: rgb(255,162,88);
+}
+
+.lessRelated {
+	background-color: rgb(254,200,121);
+}
+
+/* Main Display */
+
+#merchandiseDisplay {
+	margin: 5px;
+}
+
+#mainDisplay {
+	display: flex;
+}
+
+/* Sort Options */
+
+
+#specialOffers {
+	background-color: rgb(250,231,210);
+	border-radius: 4px;
+	width: 205px;
+	line-height: 30px;
+}
+
+#sortOptionsContainer {
+	display: inline-block;
+	border-style: solid;
+	border-width: 2px;
+	border-color: rgb(243,243,242);
+	width: 230px;
+	height: 1900px;
+	display: flex;
+	text-align: justify;
+}
+
+.sortOptions {
+	border-bottom: 2px solid rgb(243,243,242);
+}
+
+#optionContainer {
+	margin: 10px;
+}
+
+.showMore {
+	text-decoration: underline;
+}
+
+.optionHeader {
+	margin-bottom: -5px;
+}
+
+.customPriceBox {
+	text-align: center;
+	width: 60px;
+	height: 34px;
+	border-radius: 2px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgb(217,217,217);
+}
+
+#lowToHigh {
+	margin-left: 20px;
+	padding: 1px;
+}
+
+.caret {
+	width: 34px;
+	height: 34px;
+	background-color: white;
+	font-size: 15px;
+	border-radius: 2px;
+	overflow: hidden;
+	border-color: rgb(217,217,217);
+	position: relative;
+	top: 6.5px;
+
+}
+
+#locationBox {
+	height: 34px;
+	width: 140px;
+	text-align: center;
+	margin-left: 20px;
+}
+
+#searchBarTwo {
+	display: none;
+}
+
+/* Sort Bar above merchandise */
+
+#sortBar {
+	display: flex;
+	padding: 15px 15px 0px 15px;
+	justify-content: space-between;
+	margin-bottom: -15px;
+}
+
+/* Template */
+
+#templateDiv{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#templateContainer {
+	padding: 15px;
+	width: 295px;
+	height: 380px;
+	font-family: Georgia, san-serif
+	color: rgb(52,52,52);
+}
+
+.heart {
+	position: relative;
+}
+
+.templateImg {
+	width: 275px;
+	height: 220px;
+}
+
+.templateTitle {
+	font-size: 14px;
+	font-family: Arial, san-serif;
+	line-height: 1.5;
+	width: 275px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.templateSeller {
+	font-size: 12px;
+	color: rgb(105,105,105);
+}
+
+.templatePrice {
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 1.5;
+}
+
+/* Footer */
+
+#relatedFooter {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1000px;
+	margin-left: 250px;
+}
